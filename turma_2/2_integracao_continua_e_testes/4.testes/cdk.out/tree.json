@@ -1,0 +1,53 @@
+{
+  "version": "tree-0.1",
+  "tree": {
+    "id": "App",
+    "path": "",
+    "children": {
+      "Tree": {
+        "id": "Tree",
+        "path": "Tree"
+      },
+      "s3-stack-cdk-testes": {
+        "id": "s3-stack-cdk-testes",
+        "path": "s3-stack-cdk-testes",
+        "children": {
+          "meu-bucket-belisco-cdk-testes": {
+            "id": "meu-bucket-belisco-cdk-testes",
+            "path": "s3-stack-cdk-testes/meu-bucket-belisco-cdk-testes",
+            "children": {
+              "Resource": {
+                "id": "Resource",
+                "path": "s3-stack-cdk-testes/meu-bucket-belisco-cdk-testes/Resource",
+                "attributes": {
+                  "aws:cdk:cloudformation:type": "AWS::S3::Bucket",
+                  "aws:cdk:cloudformation:props": {
+                    "bucketName": "meu-bucket-belisco-cdk-testes"
+                  }
+                }
+              },
+              "Notifications": {
+                "id": "Notifications",
+                "path": "s3-stack-cdk-testes/meu-bucket-belisco-cdk-testes/Notifications"
+              }
+            }
+          },
+          "CDKMetadata": {
+            "id": "CDKMetadata",
+            "path": "s3-stack-cdk-testes/CDKMetadata",
+            "children": {
+              "Default": {
+                "id": "Default",
+                "path": "s3-stack-cdk-testes/CDKMetadata/Default"
+              },
+              "Condition": {
+                "id": "Condition",
+                "path": "s3-stack-cdk-testes/CDKMetadata/Condition"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
