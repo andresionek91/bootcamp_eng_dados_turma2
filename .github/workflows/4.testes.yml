@@ -28,11 +28,11 @@ jobs:
         python -m pip install --upgrade pip
         cd turma_2/2_integracao_continua_e_testes/4.testes
         pip install -r requirements.txt
-
-    - name: Run unit tests
-      run: |
-        cd turma_2/2_integracao_continua_e_testes/4.testes
-        python -m pytest tests/unit
+#
+#    - name: Run unit tests
+#      run: |
+#        cd turma_2/2_integracao_continua_e_testes/4.testes
+#        python -m pytest tests/unit
 
     - name: Deploy
       env:
@@ -43,12 +43,12 @@ jobs:
         cd turma_2/2_integracao_continua_e_testes/4.testes
         cdk synth
         cdk deploy
-
-    - name: Run integration tests
-      env:
-        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-        AWS_DEFAULT_REGION: ${{ secrets.AWS_DEFAULT_REGION }}
-      run: |
-        cd turma_2/2_integracao_continua_e_testes/4.testes/
-        python -m pytest tests/integration
+#
+#    - name: Run integration tests
+#      env:
+#        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+#        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+#        AWS_DEFAULT_REGION: ${{ secrets.AWS_DEFAULT_REGION }}
+#      run: |
+#        cd turma_2/2_integracao_continua_e_testes/4.testes/
+#        python -m pytest tests/integration
