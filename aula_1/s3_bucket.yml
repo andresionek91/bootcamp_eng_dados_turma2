@@ -1,0 +1,21 @@
+Resources:
+
+  MeuPrimeiroBucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: meu-primeiro-bucket-belisco-2020-10-20
+      BucketEncryption:
+        ServerSideEncryptionConfiguration:
+          - ServerSideEncryptionByDefault:
+              SSEAlgorithm: AES256
+
+
+  MeuSegundoBucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: meu-primeiro-bucket-belisco-2020-10-20-2
+      BucketEncryption:
+        ServerSideEncryptionConfiguration:
+          - ServerSideEncryptionByDefault:
+              SSEAlgorithm: AES256
+
